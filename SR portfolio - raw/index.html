@@ -21,29 +21,28 @@
     <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
-          <img src="./images/logo.svg" class="nav-logo" alt="" />
-          <button class="nav-btn" id="nav-btn">
+          <!-- <img src="./images/logo.svg" class="nav-logo" alt="" /> -->
+          <!-- <button class="nav-btn" id="nav-btn">
             <i class="fas fa-bars"></i>
-          </button>
+          </button> -->
         </div>
         <!-- nav links -->
         <ul class="nav-list">
-          <li><a href="#nav">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
   </nav>
 
-  <!-- folding menu -->
+<!-- folding menu
   <aside class="sidebar" id="sidebar">
     <div>
       <button class="close-btn" id="close-btn">
         <i class="fas fa-times"></i>
       </button>
-    <!-- nav-links -->
+    nav-links
     <ul class="sidebar-links">
       <li><a href="#nav">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -51,7 +50,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <!-- social icons -->
+    social icons
     <ul class="social-icons">
       <li>
         <a href="https://www.linkedin.com/in/shinroo/" target="_blank" class="social-icons"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -64,29 +63,16 @@
       </li>
     </ul>
     </div>
-  </aside>
+  </aside> -->
 
   <!-- header -->
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="hero-center">
-      <article>
+      <article class="hero-title">
         <h1>Hi, I'm ShinRoo</h1>
         <h4>Product Marketer & Content Opertations Specialist</h4>
-        <a href="http://#" class="btn hero-btn">Check ShinRoo's LinkedIn</a>
-        <a href="http://#" class="btn hero-btn">Download ShinRoo's CV</a>
-        
-    <!-- social icons -->
-      <!-- <ul class="social-icons">
-        <li>
-          <a href="https://www.linkedin.com/in/shinroo/" target="_blank" class="social-icons"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/shinroo7" target="_blank" class="social-icons"><i class="fab fa-github"></i> GitHub</a>
-        </li>
-        <li>
-          <a href="mailto:shinroo.chao@gmail.com" class="social-icons"><i class="fas fa-at"></i> Email ShinRoo</a>
-        </li>
-      </ul> -->
+        <a href="https://www.linkedin.com/in/shinroo/" class="btn hero-btn" target="_blank">Check LinkedIn</a>
+        <a href="http://#" class="btn hero-btn" target="_blank">Download CV</a>
       </article>
 
     <!-- hero-img -->
@@ -98,14 +84,15 @@
 
   <!-- about & skills -->
   <!-- about -->
-    <section class="about">
+    <section class="about-skills" id="about">
   <!-- section title -->
+    <div class="section-center about-center">   
     <div class="section-title">
       <h2>About Me</h2>
       <div class="underline"></div>
     </div>
     <!--end of section title -->
-    <div class="section-center about-center">
+    
       <article class="about-content">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat minima libero impedit dolorem inventore quibusdam corporis adipisci cum atque laboriosam! Beatae saepe vel vero maxime facere, perspiciatis excepturi voluptates suscipit repudiandae modi deserunt illum, asperiores facilis. Facilis illum quas cumque veritatis animi quisquam modi mollitia, optio voluptates eum aperiam deserunt!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate sed eos repellat ad delectus dolore nemo! Fugiat enim voluptatum in, inventore delectus, nihil distinctio ullam odio ad numquam qui, reprehenderit accusamus vero harum tenetur placeat quis architecto quia esse porro iusto laborum! Qui molestias consequatur atque consectetur beatae adipisci autem.</p>
@@ -113,15 +100,14 @@
     </div>
 
   <!-- skills -->
-    <section class="skills">
+    <div class="skills">
     <!-- section title -->
     <div class="section-title">
         <h2>skills</h2>
         <div class="underline"></div>
       </div>
     <!--end of section title -->
-      <div class="section-center skills-center">
-        <article>
+        <article class="section-center skills-center">
               <h3>Professional</h3>
     <!-- single skill -->
           <div class="skill">
@@ -182,15 +168,17 @@
           </div>
           <!--end of  single skill -->
     </article>
+    </div>
     </section>
 
   <!-- projects -->
   <!-- another page for coding projects -->
   <section id="projects">
-    <h2 class="projects-header">
-      My Previous Projects
-    </h2>
-            
+    <div class="projects-header">
+      <h2>My Previous Projects</h2>
+    <div class="underline"></div>   
+    </div>
+     
     <div class="projects-grid">
 
         <a href="https://codepen.io/shinroo7/full/KKNqLMO" target="_blank" class="project-tile">
@@ -222,7 +210,7 @@
     </section>
 
   <!-- Recommendation -->
-    <section class="recommendation-section">
+    <section class="recommendation-section" id="recommendation">
     <!-- section title -->
       <div class="rec-title">
         <h2>What they say...</h2>
@@ -286,15 +274,15 @@
     </section>
 
   <!-- Contact -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact-header">
         <h2>Let's work together!</h2>
         <p>You can find me via...</p>
     </div> 
 
     <div class="contact-links">
-        <a href="https://www.linkedin.com/in/shinroo/" target="_blank" class="contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://github.com/shinroo7" target="_blank" class="contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/shinroo/" target="_blank" class="contact-details" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/shinroo7" target="_blank" class="contact-details" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         <a href="mailto:shinroo.chao@gmail.com" class="contact-details"><i class="fas fa-at"></i> Email ShinRoo</a>
     </div>
   </section>
