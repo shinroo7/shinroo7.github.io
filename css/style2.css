@@ -143,9 +143,12 @@ Navbar
 }
 
 @media screen and (max-width: 375px) {
-.nav-list a {
-    font-size: 0.5rem;
-    text-align: center;
+.nav-list {
+    /* font-size: 0.5rem;
+    text-align: center; */
+    display: block;
+    text-align: right;
+    margin-left: auto;
 }
 }
 
@@ -165,14 +168,14 @@ Hero
 }
 
 .hero-img {
-  display: none;
+    display: none;
 }
 
 .hero-center {
-  min-height: calc(100vh - 5rem);
-  display: grid;
-  place-items: center;
-  padding-top: 100px;
+    min-height: calc(100vh - 5rem);
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
 }
 
 .hero-title > h1 {
@@ -211,8 +214,8 @@ Hero
 }
 
 .hero-photo {
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     border-radius: 10%;
 }
 
@@ -240,30 +243,20 @@ About & Skills
     margin: 0 auto;
 }
 .about-center {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .about-text {
     margin: auto;
-    width: 70%;
+    width: 100%;
 }
+
 .about-content {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .about-content > p {
-    margin-bottom: 1.5rem;
     color: var(--clr-h);
-}
-
-@media screen and (min-width: 768px) {
-    .skills-center {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 1rem;
-    column-gap: 4rem;
-    width: 95vw;
-    }
 }
 
 .skills {
@@ -286,6 +279,28 @@ About & Skills
     margin: 0 auto;
     max-width: 1170px;
 }
+
+@media screen and (min-width: 768px) {
+    .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    column-gap: 4rem;
+    width: 95vw;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .skills-section {
+        width: 70vw;
+    }
+    .skill p {
+        font-size: 0.5rem;
+    }
+    .skill-container > p {
+        top: -1.1rem;
+    }
+} 
 
 .skills h3 {
     margin: 1.5rem 0;
@@ -342,7 +357,7 @@ About & Skills
 }
 
 .skill-text-20 {
-    left: 25%;
+    left: 30%;
 }
 .skill-text-70 {
     left: 70%;
@@ -353,6 +368,7 @@ About & Skills
 .skill-text-90 {
     left: 90%;
 }
+
 
 
 /*
@@ -384,7 +400,7 @@ Projects
     margin-bottom: 4rem;
 }
 
-@media (max-width: 30.625em) {
+@media screen and (max-width: 30.625em) {
     #projects {
     padding: 6rem 1rem;
     }
@@ -480,6 +496,11 @@ Recommendation
     font-weight: bolder;
 }
 
+@media screen and (max-width: 398px) {
+    .recommendation-container {
+        grid-template-columns: 1fr;
+    }
+} 
 
 /*
 =============== 
@@ -512,14 +533,22 @@ Contact
     flex-wrap: wrap;
 }
 
-@media (max-width: 398px) {
+@media screen and (max-width: 788px) {
     .contact {
-        padding: 0;
-        margin: 0;
+        margin-top: 3rem;
+        line-height: 10px;
+    }
+    .contact-header > h2 {
+        font-size: 1.5rem;
         line-height: 10px;
     }
     .contact-links {
-    font-size: 0.5rem;
+        font-size: 0.3rem;
+        margin-top: 0.5rem;
+        padding:0 0 2rem 0;
+    }
+    .contact-details {
+        font-size: 1rem;
     }
 } 
 
