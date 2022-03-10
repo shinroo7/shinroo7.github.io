@@ -173,7 +173,7 @@ Hero
 
 .hero-center {
     min-height: calc(100vh - 5rem);
-    display: grid;
+    display: inline-flex;
     place-items: center;
     margin-top: 2rem;
 }
@@ -248,7 +248,7 @@ About & Skills
 
 .about-text {
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .about-content {
@@ -256,6 +256,7 @@ About & Skills
 }
 
 .about-content > p {
+    padding-bottom: 1rem;
     color: var(--clr-h);
 }
 
